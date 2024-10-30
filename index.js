@@ -16,7 +16,9 @@ export const instance=new Razorpay({
 const app=express();
 //using middlewares
 app.use(express.json());
-app.use(cors());
+app.use(cors({
+  origin: 'https://elearning-frontend-ivory.vercel.app', // Replace with your Vercel URL
+}));
 
 const port = process.env.PORT;
 
