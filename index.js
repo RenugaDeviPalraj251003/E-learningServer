@@ -17,7 +17,7 @@ const app=express();
 //using middlewares
 app.use(express.json());
 app.use(cors({
-  origin: 'https://elearning-frontend-ivory.vercel.app', // Replace with your Vercel URL
+  origin: 'https://elearning-frontend-nootyh1a0-renugadevis-projects.vercel.app', // Replace with your Vercel URL
 }));
 
 const port = process.env.PORT;
