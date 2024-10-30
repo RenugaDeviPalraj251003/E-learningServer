@@ -16,7 +16,7 @@ export const instance=new Razorpay({
 const app=express();
 //using middlewares
 app.use(express.json());
-app.use(cors);
+app.use(cors());
 
 const port = process.env.PORT;
 
