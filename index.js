@@ -17,9 +17,9 @@ const app=express();
 //using middlewares
 app.use(express.json());
 app.use(cors({
-  origin: 'https://elearning-front-navy.vercel.app',
-  credentials: true,
+    origin: "https://elearning-front-navy.vercel.app" // Replace with your actual frontend URL
 }));
+
 
 
 const port = process.env.PORT;
