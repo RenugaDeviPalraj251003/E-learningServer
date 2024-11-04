@@ -17,9 +17,7 @@ const app=express();
 //using middlewares
 app.use(express.json());
 app.use(cors({
-    origin: ['https://elearning-frontend-topaz.vercel.app'], // Replace with your actual frontend domain
-    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-    credentials: true,
+    origin: ['https://elearning-frontend-topaz.vercel.app'], // Replace with your actual frontend domai
 }));
 
 const port = process.env.PORT;
