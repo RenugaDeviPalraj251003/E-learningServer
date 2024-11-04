@@ -17,10 +17,15 @@ const app=express();
 //using middlewares
 app.use(express.json());
 
+const cors = require('cors');
+
 app.use(cors({
-    origin: 'https://elearning-front-blond.vercel.app', // Your deployed frontend URL
+    origin: 'https://elearning-front-blond.vercel.app',
+    methods: ['GET', 'POST', 'OPTIONS'],
+    allowedHeaders: ['Content-Type', 'Authorization'],
     credentials: true
 }));
+
 
 
 
