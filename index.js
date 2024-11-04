@@ -17,7 +17,7 @@ const app=express();
 //using middlewares
 app.use(express.json());
 app.use(cors({
-  origin: 'https://elearning-frontend-eight.vercel.app',
+  origin: 'https://elearning-front-navy.vercel.app',
   credentials: true,
 }));
 
