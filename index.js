@@ -18,7 +18,7 @@ const app=express();
 app.use(express.json());
 
 app.use(cors({
-    origin: 'https://elearning-front-alpha.vercel.app', // Your deployed frontend URL
+    origin: 'https://elearning-front-blond.vercel.app', // Your deployed frontend URL
     credentials: true
 }));
 
