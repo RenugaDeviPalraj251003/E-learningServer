@@ -16,11 +16,12 @@ export const instance=new Razorpay({
 const app=express();
 //using middlewares
 app.use(express.json());
+
 app.use(cors({
-    origin: ['https://elearning-front-pi.vercel.app'], // Replace with your actual frontend domain
-    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-    credentials: true,
+    origin: 'https://elearning-front-pi.vercel.app', // Your deployed frontend URL
+    credentials: true
 }));
+
 
 
 const port = process.env.PORT;
