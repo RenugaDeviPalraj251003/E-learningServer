@@ -19,7 +19,7 @@ app.use(express.json());
 
 
 
-const cors = require('cors');
+
 app.use(cors({ origin: 'https://iridescent-frangipane-21a186.netlify.app' }));
 
 
