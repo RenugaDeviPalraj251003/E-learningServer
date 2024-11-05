@@ -20,7 +20,7 @@ app.use(express.json());
 
 
 app.use(cors({
-    origin: "https://willowy-mochi-a59eaf.netlify.app",
+    origin: "https://iridescent-frangipane-21a186.netlify.app",
     methods: ['GET', 'POST', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization'],
     credentials: true
