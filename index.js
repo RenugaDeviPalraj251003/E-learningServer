@@ -3,7 +3,7 @@ import dotenv from  "dotenv";
 import {connectDb} from "./database/db.js";
 import cors from 'cors';
 import Razorpay from 'razorpay';
-const path = require('path');
+import path from "path";
 
 
 
