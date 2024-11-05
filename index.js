@@ -31,7 +31,7 @@ const port = process.env.PORT;
 app.get("/",(req,res)=>{
     res.send("SERVER IS WORKING");
 });
-app.use("/uploads" ,express.static("uploads"))
+app.use("/uploads" ,express.static("uploads"));
 
 
 //IMPORTING ROUTES
