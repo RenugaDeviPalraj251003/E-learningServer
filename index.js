@@ -3,7 +3,7 @@ import dotenv from  "dotenv";
 import {connectDb} from "./database/db.js";
 import cors from 'cors';
 import Razorpay from 'razorpay';
-
+const path = require('path');
 
 
 
@@ -29,12 +29,14 @@ app.use(cors({
 
 
 
+
 const port = process.env.PORT;
 
 app.get("/",(req,res)=>{
     res.send("SERVER IS WORKING");
 });
-app.use("/uploads" ,express.static("uploads"))
+app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
+
 
 //IMPORTING ROUTES
 import userRoutes from './routes/user.js';
