@@ -17,11 +17,7 @@ const app=express();
 //using middlewares
 app.use(express.json());
 
-const corsOptions = {
-  origin: 'https://iridescent-frangipane-21a186.netlify.app', 
-  optionsSuccessStatus: 200
-};
-app.use(cors(corsOptions));
+app.use(cors({ origin: '*' }));
 
 
 
