@@ -17,11 +17,11 @@ const app=express();
 //using middlewares
 app.use(express.json());
 
-
-
-
-app.use(cors({ origin: 'https://iridescent-frangipane-21a186.netlify.app' }));
-
+const corsOptions = {
+  origin: 'https://iridescent-frangipane-21a186.netlify.app', 
+  optionsSuccessStatus: 200
+};
+app.use(cors(corsOptions));
 
 
 
@@ -31,7 +31,8 @@ const port = process.env.PORT;
 app.get("/",(req,res)=>{
     res.send("SERVER IS WORKING");
 });
-app.use("/uploads" ,express.static("uploads"));
+app.use('/uploads', express.static('uploads'));
+
 
 
 //IMPORTING ROUTES
