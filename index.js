@@ -18,7 +18,7 @@ const app=express();
 app.use(express.json());
 
 app.use(cors({
-  origin: 'https://e-learningserver-production.up.railway.app', // Frontend URL
+  origin: 'https://iridescent-frangipane-21a186.netlify.app', // Frontend URL
   methods: ['GET', 'POST', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization'],
   credentials: true
