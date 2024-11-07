@@ -17,8 +17,12 @@ const app=express();
 //using middlewares
 app.use(express.json());
 
-app.use(cors({ origin: '*' }));
-
+app.use(cors({
+  origin: 'https://e-learningserver-production.up.railway.app', // Frontend URL
+  methods: ['GET', 'POST', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization'],
+  credentials: true
+}));
 
 
 
