@@ -15,7 +15,13 @@ const app = express();
 
 // using middlewares
 app.use(express.json());
-app.use(cors());
+import cors from 'cors';
+
+app.use(cors({
+    origin: 'https://elearning-front-jet.vercel.app', // Replace with your frontend URL
+    optionsSuccessStatus: 200,
+}));
+
 
 const port = process.env.PORT;
 
