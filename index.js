@@ -18,7 +18,7 @@ app.use(express.json());
 
 
 app.use(cors({
-    origin: 'https://elearning-front-jet.vercel.app', // Replace with your frontend URL
+    origin: 'https://elearning-front-murex.vercel.app', // Replace with your frontend URL
     optionsSuccessStatus: 200,
 }));
 
